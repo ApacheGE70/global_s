@@ -1,23 +1,25 @@
 <div class="main_block">
   <% @websites.each do |website| %>
-    <div class="website">
-      <div class="name_site">
-        <h3 class="name"><%= website.website_name %></h3>
-      </div>
-      
-      <div class="description">
-        <p class="description"><%= website.description %></p>
-      </div>
-
-      <div class="info">
-        <div class="date">
-          <p class="date"><%= website.created_at.to_date %></p>
+    <%= link_to website do %>
+      <div class="website">
+        <div class="name_site">
+          <h3 class="name"><%= website.website_name %></h3>
         </div>
         
-        <div class="likes">
-          <p class="likes">likes: <%= website.likes %></p>
+        <div class="description">
+          <p class="description"><%= website.description %></p>
+        </div>
+
+        <div class="info">
+          <div class="date">
+            <p class="date"><%= website.created_at.to_date %></p>
+          </div>
+          
+          <div class="likes">
+            <p class="likes">likes: <%= website.likes %></p>
+          </div>
         </div>
       </div>
-    </div>
+    <% end %>
   <% end %>
 </div>

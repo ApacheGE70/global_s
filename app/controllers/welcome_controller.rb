@@ -6,10 +6,11 @@ class WelcomeController < ApplicationController
 	end
 
 	def all
-		@websites_all = Website.order(:likes)
+		@websites = Website.order(:likes)
 	end
 	
 	def author
-		@websites_author = Website.order(:user_id)
+		params[:user_id]
+		@websites = Website.where(:user_id => params[:id])
 	end
 end

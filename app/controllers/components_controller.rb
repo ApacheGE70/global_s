@@ -27,11 +27,10 @@ class ComponentsController < ApplicationController
 	  def create
 
 	    @component = Component.new(component_params)
-	    @parameter_suka = params
 
 	    respond_to do |format|
 	      if @component.save(component_params)
-	        format.html { render :index, notice: "ОХУЕТЬ, СОЗДАЛОСЬ!!!" }
+	        format.html { render :index, notice: "Component was successfully created." }
 	        format.json { render :show, status: :created, location: @component }
 	      else
 	        format.html { render :new }
