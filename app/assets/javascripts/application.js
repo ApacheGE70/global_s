@@ -15,3 +15,8 @@
 //= require jquery_ujs
 //= require bootstrap 
 //= require turbolinks
+//= require pgwslideshow
+//= require myjs
+//= require bootstrap-markdown
+//= require to-markdown
+//= require markdown

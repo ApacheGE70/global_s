@@ -5,10 +5,15 @@ class WebsitesController < ApplicationController
     @websites = Website.all 
   end
 
+  def my_websites
+    
+  end
+
   # GET /websites
   # GET /websites.json
   def index
-    @websites = Website.all
+    @websites = Website.where(user_id: current_user.id)
+    @website = Website.new
   end
 
   # GET /websites/1
@@ -31,14 +36,19 @@ class WebsitesController < ApplicationController
   # POST /websites.json
   def create
     @website = Website.new(website_params)
+    @website.user_id = current_user.id
 
     respond_to do |format|
       if @website.save
         format.html { redirect_to @website, notice: 'Website was successfully created.' }
         format.json { render :show, status: :created, location: @website }
+        # added:
+        format.js   { render action: 'show', status: :created, location: @website }
       else
         format.html { render :new }
         format.json { render json: @website.errors, status: :unprocessable_entity }
+        # added:
+        format.js   { render json: @website.errors, status: :unprocessable_entity }
       end
     end
   end

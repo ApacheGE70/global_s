@@ -17,6 +17,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'bootstrap/theme';
+@import 'pgwslideshow';
+@import "bootstrap-markdown.min";
 
 .alert-alert {
   @extend .alert-warning;
@@ -28,6 +30,7 @@
 
 #bottom{
 	margin-top: 5%;
+  width:80%;
 }
 
 nav.navbar{

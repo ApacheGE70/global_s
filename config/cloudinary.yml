@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: isite
+  api_key: '235693783141448'
+  api_secret: 95aD1-gkWTAXQAhqFJMs0y7wxF0
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: isite
+  api_key: '235693783141448'
+  api_secret: 95aD1-gkWTAXQAhqFJMs0y7wxF0
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: isite
+  api_key: '235693783141448'
+  api_secret: 95aD1-gkWTAXQAhqFJMs0y7wxF0
+  enhance_image_tag: true
+  static_image_support: false

@@ -1,3 +1,132 @@
-// Place all the styles related to the components controller here.
+	// Place all the styles related to the components controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#constructor{
+	margin-top:5%;
+	width: 80%;
+	left: 10%;
+	right: 10%;
+	position: fixed;
+}
+
+div.blocks
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+}
+
+div.block
+{
+	width: 100%;
+	height: 500px;
+	margin-top: 5%;
+	background: rgba(0,0,0,0.3);
+	position: relative;
+}
+
+div.top
+{
+	width:100%;
+	height:50%;
+}
+div.choice_top
+{
+	float:left;
+	width: 20%;
+	height: 40%;
+	margin-left: 20%;
+}
+
+div.free_space	
+{
+
+	height: 10%;
+	width:100%;
+	float:left;
+}
+
+
+div.choice_bottom
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	height: 20%;
+	margin-top: 5%;
+}
+
+body
+{
+	min-width: 900px;	
+}
+
+
+#vertical_collaps {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+ }
+ .navbar-collapse.in {
+    overflow-x: visible;
+ }
+
+#vertical_nav
+{
+	top:10%;
+	max-width:150px;
+	height: 85%;
+	margin-right: 0;
+	margin-left: 0;
+	left:3%;
+}	
+
+.vertical
+{float:none !important;}
+
+div.galary
+{
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {   
+	max-height: 300px;
+}
+.vertical_menu
+{
+	visibility: hidden;
+}
+.pgwSlideshow
+{
+	position: absolute;
+	width: 100%;
+	margin-top: 5%;
+	visibility: hidden;
+}
+
+iframe
+{
+	position: absolute;
+	width: 100%;
+	visibility: hidden;
+}
+
+.input_url
+{
+	visibility: hidden;
+}
+
+.form
+{
+	position: absolute;
+	width: 100%;
+	margin-top:7%;
+	visibility: hidden;
+}
+
+

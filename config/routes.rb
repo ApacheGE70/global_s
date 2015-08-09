@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :images
   resources :websites
   resources :pages
   resources :components 
@@ -7,6 +8,7 @@ Rails.application.routes.draw do
 
   get "welcome/all"
   get "welcome/author/:id" => "welcome#author"
+  get "welcome/my_websites/:id" => "websites#my_websites"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
